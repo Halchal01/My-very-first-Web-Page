@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-70deg, #1a0f3e 53%, #6457c6 100%);
+  height: 100vh;
+  color: #919191;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: left;
+  border-left: 2px dotted #00ffff;
+  padding-left: 60px;
+}
+
+.hero {
+  margin-top: 153px;
+}
+
+h1 {
+  color: #00ffff;
+  padding-top: 30px;
+  letter-spacing: 1px;
+  font-size: 5vw;
+  transition: transform 0.7s ease;
+}
+
+h2 {
+  color: #00ffff;
+  padding-top: 10px;
+  letter-spacing: 5px;
+  font-size: 3vw;
+  transition: transform 0.7s ease;
+}
+
+h1:hover {
+  color: #ff0099;
+  transform: scale(1.05);
+}
+
+h2:hover {
+  color: #ff0099;
+  transform: scale(1.03);
+}
+
+.button {
+  width: 200px;
+  text-align: center;
+  font-size: 1.8vw;
+  padding: 7px 12px;
+  margin-top: 40px;
+  border-radius: 6px;
+  border: 1px solid #00ffff;
+  transition: transform 0.7s ease;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+aside {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: #00ffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.7em;
+}
+
+i {
+  color: #e5e1e1;
+  margin: 15px;
+  transition: transform 0.7s ease;
+  font-size: 26px;
+}
+
+i:hover {
+  -ms-transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+  color: #00ffff;
+}
+
+a {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+a:hover {
+  color: #ff0099;
+}
+
+#timedate {
+  text-align: left;
+  color: #00ffff;
+  padding-top: 30px;
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .button {
+    font-size: 3vw;
+    width: 180px;
+  }
+}
